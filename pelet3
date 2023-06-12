@@ -1,0 +1,65 @@
+
+Select a command from the followings:
+1. read_set <set_name>, <values_seperated_by_commas>
+2. print_set <set_name>
+3. union_set <first_set_name>, <second_set_name>, <result_set_name>
+4. intersect_set <first_set_name>, <second_set_name>, <result_set_name>
+5. sub_set <first_set_name>, <second_set_name>, <result_set_name>
+6. symdiff <first_set_name>, <second_set_name>, <result_set_name>
+7. stop
+
+Enter a command: 
+The command you've entered: 
+read_Set SETA, 1, 2, -1
+Undefined command name
+
+Enter a command: 
+The command you've entered: 
+read_set setA, 1,2, -1
+Undefined set name
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, x,y,z,-1
+Invalid set member - not an integer
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2.0, 3, -1
+Invalid set member - not an integer
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, 3
+Missing comma
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, -3
+Missing comma
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, 3, -1, 4
+Extraneous text after end of command
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, 3,
+List of set members is not terminated correctly.
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, 3, -1
+Command read_set is done!
+
+Enter a command: 
+The command you've entered: 
+print_set SETA
+1 2 3 
+Command print_set is done!
+
+Enter a command: 
+The command you've entered: 
+stop
+Stopping program

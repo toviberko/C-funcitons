@@ -1,0 +1,74 @@
+
+Select a command from the followings:
+1. read_set <set_name>, <values_seperated_by_commas>
+2. print_set <set_name>
+3. union_set <first_set_name>, <second_set_name>, <result_set_name>
+4. intersect_set <first_set_name>, <second_set_name>, <result_set_name>
+5. sub_set <first_set_name>, <second_set_name>, <result_set_name>
+6. symdiff <first_set_name>, <second_set_name>, <result_set_name>
+7. stop
+
+Enter a command: 
+The command you've entered: 
+read_set SETA, 1, 2, 3, -1
+Command read_set is done!
+
+Enter a command: 
+The command you've entered: 
+print_set SETA
+1 2 3 
+Command print_set is done!
+
+Enter a command: 
+The command you've entered: 
+read_set SETB, 2, 3, 4, -1
+Command read_set is done!
+
+Enter a command: 
+The command you've entered: 
+print_set SETB
+2 3 4 
+Command print_set is done!
+
+Enter a command: 
+The command you've entered: 
+union_set SETA, SETB,, SETC
+Multiple consecutive commas
+
+Enter a command: 
+The command you've entered: 
+union_set ,SETA,SETB,SETC
+Illegal comma
+Extraneous text after end of command
+
+Enter a command: 
+The command you've entered: 
+union_set SETA SETB SETC
+Missing comma
+
+Enter a command: 
+The command you've entered: 
+union_set SETA, SETB, SETC
+Command union_set is done!
+
+Enter a command: 
+The command you've entered: 
+print_set SETC
+1 2 3 4 
+Command print_set is done!
+
+Enter a command: 
+The command you've entered: 
+sub_set SETC, SETA, SETC
+Command sub_set is done!
+
+Enter a command: 
+The command you've entered: 
+print_set SETC
+4 
+Command print_set is done!
+
+Enter a command: 
+The command you've entered: 
+stop
+Stopping program

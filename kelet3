@@ -1,0 +1,11 @@
+read_Set SETA, 1, 2, -1
+read_set setA, 1,2, -1
+read_set SETA, x,y,z,-1
+read_set SETA, 1, 2.0, 3, -1
+read_set SETA, 1, 2, 3
+read_set SETA, 1, 2, -3
+read_set SETA, 1, 2, 3, -1, 4
+read_set SETA, 1, 2, 3,
+read_set SETA, 1, 2, 3, -1
+print_set SETA
+stop
